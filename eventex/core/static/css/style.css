@@ -1,0 +1,80 @@
+/*Imports*/
+@import url(http://fonts.googleapis.com/css?family=Armata);
+@import url(http://fonts.googleapis.com/css?family=Aldrich);
+@import url(http://fonts.googleapis.com/css?family=Nova+Square);
+/*Reset CSS*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    background:#F8F8FF;
+}
+body{
+    letter-spacing: 1px;
+    line-height: 170%;
+    font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    color:#333;
+    font-weight:normal;
+}
+hr{
+    border: 1px solid #D3D3D3;
+    width: 850px;
+    text-align: center;
+    margin: 0 auto;
+}   
+a:hover{
+    color: #000080;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px #778899;   
+}
+p{
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+#header{
+    width:850px; 
+    margin:0 auto;
+    padding: 30px 0px 30px 0px;
+}
+#content{
+    width:800px; 
+    height: 350px;
+    margin:0 auto;
+    padding: 25px 10px 25px 10px;
+    position: relative;
+    border: 1px;
+}
+#content h1{
+    font-size:55px ;
+    text-align: center;
+    vertical-align: middle;
+    color:  #000080;
+    line-height:150% ;
+    font-family: 'Nova Square';
+}
+#content h1 span{
+    font-size:65px ;
+    color:  #DAA520;
+    text-shadow: 2px 2px 2px #D3D3D3;
+}
+#content p{
+    line-height:250% ; 
+}
+#content p span{
+    font-weight: bold; 
+}
+#footer{
+    width:850px; 
+    margin:0 auto;
+    padding: 10px 0px 10px 0px;
+}
+#footer span{
+    float: right;
+}
