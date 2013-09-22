@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="EventeX" />
+  <meta name="author" content="Marcelo H M Dias">
+  <meta http-equiv='content-Language' content='en-US' />
+  <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/style.css" media="screen">
+  <title>EventeX - Bem Vindo!</title>  
+  </head>
+<body> 
+  <!--:Região que define o topo da página e o menu de navegação--> 
+  <header class="container"> 
+    <nav> 
+      <a href="/" title="Nome do Site"> 
+        <img src="{{STATIC_URL}}img/logo.png" title="Logo Eventex" id="logo" height="45px" width="155">
+      </a> 
+      <ul> 
+        <li><a href="/" title="Início">Início</li></a>
+        <li><a href="/inscricao/" title="Inscrição">Inscrição</a></li> 
+      </ul> 
+    </nav>
+  </header>
+  <!--Região que define o topo da página e o menu de navegação:--> 
+
+  <!--:Corpo da página-->
+   <div class="container"> 
+    <div class="content">
+      {% block content %}
+      {% endblock content %}
+    </div> 
+  </div>
+  <!--Corpo da página:-->
+
+  <!--footer:-->
+  <footer class="container"> 
+    <div class="content" id="footer"> 
+      <p>&copy;2013 - <a href="/" title="Início">EventeX</a>, todos os direitos reservados.
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"> 
+        <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/br/80x15.png" /> 
+      </a> 
+      <span> 
+        <a href="http://www.djangoproject.com/" id="django"> 
+          <img src="https://djangoproject.com/s/img/badges/djangoproject120x25_grey.gif" border="0" alt="A Django site." title="A Django site." /> 
+        </a> 
+      </span> 
+    </p>
+  </div>
+  </footer>
+  <!--footer:-->
+</body>
+</html>
