@@ -1,53 +1,56 @@
 {% extends 'base.html' %}
 {% block content %} 
-<div id="main"> 
+<div id="form"> 
 	<form action="." method="POST"> 
 		<fieldset> 
 			<legend><h2>Formulário de Inscrição:</h2></legend> 
 			{% csrf_token %}
-			<div id="inscription">
+			<div id="inscription"> 
 				<table> 
+
 					<tr> 
 						<td> 
 							<label for="{{ form.name.id_for_label }}">{{ form.name.label }}:</label> 
 						</td> 
-						<td> 
-							{{ form.name }} 
-							{{ form.name.errors }} 
-						</td> 
+						<td>{{ form.name }} </td> 
+					</tr> 
+					<tr> 
+						<td>&nbsp;</td> 
+						<td>{{ form.name.errors }}</td> 
 					</tr> 
 					<tr> 
 						<td> 
 							<label for="{{ form.cpf.id_for_label }}">{{ form.cpf.label }}:</label> 
-						</td>
-						<td> 
-							{{ form.cpf }} 
-							{{ form.cpf.errors }} 
 						</td> 
-					</tr>
-					<tr> 
-						<td> 
-							<label for="{{ form.email.id_for_label }}">{{ form.email.label }}:</label> 
-						</td> 
-						<td> 
-							{{ form.email }} 
-							{{ form.email.errors }} 
-						</td> 
-					</tr> 
-					<tr> 
-						<td> 
-							<label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}:</label> 
-						</td> 
-						<td> 
-							{{ form.phone }} 
-							{{ form.phone.errors }} 
-						</td> 
+						<td>{{ form.cpf }}</td> 
 					</tr> 
 					<tr> 
 						<td>&nbsp;</td> 
-						<td><input type="submit" value="Enviar!" class="button"> </td> 
+						<td>{{ form.cpf.errors }}</td> 
 					</tr> 
-				</table> 
+					<tr> 
+						<td><label for="{{ form.email.id_for_label }}">{{ form.email.label }}:</label></td> 
+						<td>{{ form.email }}</td> 
+					</tr> 
+					<tr> 
+						<td>&nbsp;</td> 
+						<td>{{ form.email.errors }}</td> 
+					</tr> 
+					<tr> 
+						<td><label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}:</label></td> 
+						<td>{{ form.phone }}</td> 
+					</tr> 
+					<tr> 
+						<td>&nbsp;</td> 
+						<td>{{ form.phone.errors }}</td> 
+					</tr> 
+					<tr> 
+						<td>&nbsp;</td> 
+						<td>
+							<input type="submit" value="Enviar!" class="button">
+						</td> 
+					</tr> 
+				</table>
 			</div>
 		</fieldset>
 	</form> 

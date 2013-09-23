@@ -1,192 +1,103 @@
-/*Imports*/
+/***********Imports***********/
+
 @import url(http://fonts.googleapis.com/css?family=Armata);
 @import url(http://fonts.googleapis.com/css?family=Aldrich);
 @import url(http://fonts.googleapis.com/css?family=Nova+Square);
-/*Reset CSS*/
-*{
-    border: 0;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-}
-html {
-    background:#fff; 
-}
-body{
-    letter-spacing: 1px;
-    line-height: 170%;
-    font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif;
-}
-h1, h2, h3, h4, h5, h6, p, a{
-    color:#333;
-    font-weight:normal;
-}
-a:hover{
-    color: #113377;
-    text-decoration: none;
-    text-shadow: 0px 0px 1px #778899;   
-}
-p{
-    font-size: 14px;
-    line-height: 160%;
-    margin-bottom: 10px;
-}
-/*Define um comportamento padrão para as divs que separa cada sessão horizontal*/
-.container{
-    width:100%;
-    margin:0;
-    height:auto;
-    position: relative;
-    float: left;
-}
-/*Define o comportamento da área que recebe o conteúdo*/
-.content{
-    width:960px;
-    margin:0 auto;
-    padding: 20px 0;
-    overflow: hidden;
-    height:auto;
-    position: relative; 
-}
-/*Posiciona a logo*/
-#logo{
-    margin-top: 10px;
-}
-/*Configurações do topo logo e menu*/
-header{
-    position:relative;
-    background: #113377;
-    width: 100%;
-    float: left;
-    margin: 0;
-    padding:0;
-    border-bottom: solid 2px #BDC3C7;
-}
-header nav{
-    width:960px;
-    height:auto;
-    padding: 0;
-    margin: 0 auto
-}
-header nav>a{
-    float:left;
-}
-header nav>ul{
-    width: auto;
-    margin: 0;
-    padding: 0;
-    float: right;
-}
-header nav>ul>li{
-    float:left;
-    list-style: none;
-    padding:0;
-    margin: 0
-}
-header nav>ul>li>a{
-    font-size:14px;
-    color:#fff;
-    font-weight:200;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 20px;
-    line-height: 170%;
-    display: block;
-}
-header nav>ul>li>a:hover{
-    color:#fff;
-    background:#104E8B;
-}
-/*Comportamento do corpo da página*/
-#featured{
-    position: relative;
-}
-#featured .content{
-    padding: 50px 0;
-}
-#featured h1{
-    font-size: 65px;
-    color:#113377;
-    line-height: 170%;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'Nova Square';
-}
-#featured h2{
-    font-size: 45px;
-    color:#113377;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'Nova Square';
-}
-#main{
-    position: relative;
-    min-height: 250px
-}
-#main p{
-    line-height:350% ; 
-}
-#main p span{
-    font-weight: bold; 
-}
-/*Comportamento do rodapé*/
-footer{
-    height: 200px;
-    background: #113377;
-    border-top: solid 2px #BDC3C7;
-}
-footer p{
-    color: #FFF;
-}
-footer a{
-    color: #FFF;
-}
-footer a:hover{
-    color: #FFF;
-}
-footer span{
-    float: right;
-}
-/*Comportamento página insceição*/
-form{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-fieldset{
-    border: solid 2px #000;
-    border-radius: 15px;
-}
-form fieldset table{
-    border: opx;
-}
-form fieldset table tr{
-    height: 60px ;
-}
-form fieldset table tr td{
-    width: 150px;
-}
-#inscription{
-    padding: 30px 0px 30px 60px;
-}
-input{
-    border: solid 2px #000;
-    border-radius: 5px;
-    width: 650px;
-    height: 30px;
-}
-.button{
-    border-radius: 3px;
-    border: 0px;
-    width: 150px;
-    background-color: #113377;
-    color: #FFF;
-    padding: 5px;
-    font-size: 15px;
-    float: right;
-    font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif;
-}
-.button:hover{
-    background:#104E8B;
-}
+
+/***********Reset CSS***********/
+
+*{border: 0; padding: 0; margin: 0; list-style: none; text-decoration: none}
+
+html {background:#fff}
+
+body{letter-spacing: 1px; line-height: 170%; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
+
+h1, h2, h3, h4, h5, h6, p, a{color:#333; font-weight:normal}
+
+a:hover{color: #104E8B; text-decoration: none}
+
+p{font-size: 14px; line-height: 160%; margin-bottom: 10px} 
+
+span{font-weight: bold}
+
+/***********Define um comportamento padrão para as divs que separa cada sessão horizontal***********/
+
+.container{width:100%; margin:0; height:auto; position: relative; float: left}
+
+/***********Define o comportamento da área que recebe o conteúdo***********/
+
+.content{width:960px; margin:0 auto; padding: 20px 0; overflow: hidden; height:100%; position: relative}
+
+/***********Posiciona a logo***********/
+
+#logo{margin-top: 10px}
+
+/***********Configurações do topo, logo e menu***********/
+
+header{position:relative; background: #113377; width: 100%; height: 100%; float: left; margin: 0; padding:0; border-bottom: solid 2px #BDC3C7}
+
+header nav{width:960px; height:auto; padding: 0; margin: 0 auto}
+
+header nav>a{float:left}
+
+header nav>ul{width: auto; margin: 0; padding: 0; float: right}
+
+header nav>ul>li{float:left; list-style: none; padding:0; margin: 0}
+
+header nav>ul>li>a{font-size:15px; color:#fff; font-weight:200; text-decoration: none; text-transform: uppercase; margin: 0; padding: 20px; line-height: 170%; display: block}
+
+header nav>ul>li>a:hover{color:#fff; background:#104E8B}
+
+/***********Comportamento e configurações do corpo da página***********/
+
+#featured{position: relative}
+
+#featured .content{padding: 50px 0}
+
+#featured h1{font-size: 65px; color:#113377; line-height: 170%; text-align: center; vertical-align: middle; font-family: 'Nova Square'} 
+
+#main{position: relative; height: auto}
+
+#main p{line-height:350%}
+
+#form{position: relative; height: auto}
+
+#form h2{font-size: 25px; color:#000; font-weight: bold; font-family: 'Nova Square'}
+
+/***********Comportamento do rodapé***********/
+
+#footer{bottom:-200px; position: absolute; padding-bottom: 40px; background: #113377}
+
+footer{background: #113377; border-top: solid 1px #BDC3C7}
+
+footer p{color: #FFF}
+
+footer a{color: #FFF}
+
+footer a:hover{color: #FFF}
+
+footer span{float: right}
+
+/***********Comportamento dos formulários***********/
+
+#inscription{padding: 30px 0px 30px 60px}
+
+form{padding-top: 40px; padding-bottom: 40px}
+
+fieldset{border: solid 2px #000; border-radius: 15px}
+
+form fieldset table{border: 0px}
+
+form fieldset table tr{height: 40px}
+
+form fieldset table tr td{width: 150px}
+
+input{border: solid 2px #000; border-radius: 5px; width: 650px; height: 30px}
+
+input:focus{border: solid 2px #104E8B; background-color: #ECF0F1}
+
+.button{border-radius: 3px; border: 0px; width: 150px; background-color: #113377; color: #FFF; padding: 5px; font-size: 14px; float: right; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
+
+.button:hover{background:#104E8B}
+
+.button:focus{background:#104E8B}

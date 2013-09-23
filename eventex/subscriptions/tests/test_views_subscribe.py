@@ -1,6 +1,7 @@
 # coding: utf-8
 from django.test import TestCase
 from eventex.subscriptions.forms import SubscriptionForm
+from eventex.subscriptions.models import Subscription
 
 
 class SubscribeTest(TestCase):
@@ -37,7 +38,17 @@ class SubscribeTest(TestCase):
 		self.assertIsInstance(form, SubscriptionForm)
 
 
-	def test_form_has_fields(self):
-		'Form must have 4 fields'
-		form = self.resp.context['form']
-		self.assertItemsEqual(['name', 'email', 'cpf', 'phone'], form.fields)
+class SubscribePostTest(TestCase):
+	def setUp(self):
+		data = dict(name='Marcelo Dias', cpf='12345678901', email='marcelo@dias.com', phone='27-12345678')
+		self.resp = self.client.post('/incricao/', data)
+
+
+	def test_post(self):
+		'Valid POST should redirect to /inscricao/1/'
+		self.assertEqual(302, self.resp.status_code)
+
+
+	def test_save(self):
+		'Valid POST must be saved.'
+		self.assertTrue(Subscription.objects.exists())
