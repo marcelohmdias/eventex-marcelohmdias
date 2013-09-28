@@ -7,12 +7,7 @@ from eventex.subscriptions.models import Subscription
 
 class SubscriptionTest(TestCase):
 	def setUp(self):
-		self.obj = Subscription(
-			name='Marcelo Dias',
-			cpf='12345678901',
-			email='marcelo@dias.com',
-			phone='27-12345678'
-		)
+		self.obj = Subscription(name='Marcelo Dias', cpf='12345678901', email='marcelo@dias.com', phone='27-12345678')
 
 	def test_create(self):
 		'Subscription must have name, cpf, email, phone'

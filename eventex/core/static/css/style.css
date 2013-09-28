@@ -14,7 +14,7 @@ body{letter-spacing: 1px; line-height: 170%; font-family: 'Aldrich', 'Armata', M
 
 h1, h2, h3, h4, h5, h6, p, a{color:#333; font-weight:normal}
 
-a:hover{color: #104E8B; text-decoration: none}
+a:hover{color: #38628B; text-decoration: none}
 
 p{font-size: 14px; line-height: 160%; margin-bottom: 10px} 
 
@@ -34,7 +34,7 @@ span{font-weight: bold}
 
 /***********Configurações do topo, logo e menu***********/
 
-header{position:relative; background: #113377; width: 100%; height: 100%; float: left; margin: 0; padding:0; border-bottom: solid 2px #BDC3C7}
+header{position:relative; background: #2F4A6F; width: 100%; height: 100%; float: left; margin: 0; padding:0; border-bottom: solid 2px #BDC3C7}
 
 header nav{width:960px; height:auto; padding: 0; margin: 0 auto}
 
@@ -46,7 +46,7 @@ header nav>ul>li{float:left; list-style: none; padding:0; margin: 0}
 
 header nav>ul>li>a{font-size:15px; color:#fff; font-weight:200; text-decoration: none; text-transform: uppercase; margin: 0; padding: 20px; line-height: 170%; display: block}
 
-header nav>ul>li>a:hover{color:#fff; background:#104E8B}
+header nav>ul>li>a:hover{color:#fff; background:#38628B}
 
 /***********Comportamento e configurações do corpo da página***********/
 
@@ -54,7 +54,7 @@ header nav>ul>li>a:hover{color:#fff; background:#104E8B}
 
 #featured .content{padding: 50px 0}
 
-#featured h1{font-size: 65px; color:#113377; line-height: 170%; text-align: center; vertical-align: middle; font-family: 'Nova Square'} 
+#featured h1{font-size: 65px; color:#2F4A6F; line-height: 170%; text-align: center; vertical-align: middle; font-family: 'Nova Square'} 
 
 #main{position: relative; height: auto}
 
@@ -66,15 +66,15 @@ header nav>ul>li>a:hover{color:#fff; background:#104E8B}
 
 /***********Comportamento do rodapé***********/
 
-#footer{bottom:-200px; position: absolute; padding-bottom: 40px; background: #113377}
+#footer{bottom:-200px; position: absolute; padding-bottom: 40px; background: #2F4A6F}
 
-footer{background: #113377; border-top: solid 1px #BDC3C7}
+footer{background: #2F4A6F; border-top: solid 1px #BDC3C7}
 
 footer p{color: #FFF}
 
 footer a{color: #FFF}
 
-footer a:hover{color: #FFF}
+footer a:hover{color: #BDC3C7}
 
 footer span{float: right}
 
@@ -94,10 +94,12 @@ form fieldset table tr td{width: 150px}
 
 input{border: solid 2px #000; border-radius: 5px; width: 650px; height: 30px}
 
-input:focus{border: solid 2px #104E8B; background-color: #ECF0F1}
+input:focus{border: solid 2px #38628B; background-color: #F5F5F5}
 
-.button{border-radius: 3px; border: 0px; width: 150px; background-color: #113377; color: #FFF; padding: 5px; font-size: 14px; float: right; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
+.button{border-radius: 3px; border: 0px; width: 150px; background-color: #2F4A6F; color: #FFF; padding: 5px; font-size: 14px; float: right; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
 
-.button:hover{background:#104E8B}
+.button:hover{background:#38628B}
 
-.button:focus{background:#104E8B}
+.button:focus{background:#38628B}
+
+table tr td .errorlist{color: #C0392B;}
