@@ -9,3 +9,4 @@ class SubscriptionForm(forms.ModelForm):
 	email = forms.CharField(error_messages={'required': 'Preencha um e-mail para contato.'})
 	class Meta:
 		model = Subscription
+		exclude = ('paid',)

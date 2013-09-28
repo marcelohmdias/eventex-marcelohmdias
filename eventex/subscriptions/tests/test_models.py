@@ -7,7 +7,10 @@ from eventex.subscriptions.models import Subscription
 
 class SubscriptionTest(TestCase):
 	def setUp(self):
-		self.obj = Subscription(name='Marcelo Dias', cpf='12345678901', email='marcelo@dias.com', phone='27-12345678')
+		self.obj = Subscription(name='Marcelo Dias', 
+								cpf='12345678901',
+								email='marcelo@dias.com',
+								phone='27-12345678')
 
 	def test_create(self):
 		'Subscription must have name, cpf, email, phone'
@@ -25,16 +28,30 @@ class SubscriptionTest(TestCase):
 		self.assertEqual(u'Marcelo Dias', unicode(self.obj))
 
 
+	def test_paid_default_value_is_False(self):
+		'By default paid must be False.'
+		self.assertEqual(False, self.obj.paid)
+
+
 class SubscriptionUniqueTest(TestCase):
 	def setUp(self):
-		Subscription.objects.create(name='Marcelo Dias', cpf='12345678901', email='marcelo@dias.com', phone='27-12345678')
+		Subscription.objects.create(name='Marcelo Dias',
+									cpf='12345678901',
+									email='marcelo@dias.com',
+									phone='27-12345678')
 
 	def test_cpf_unique(self):
 		'CPF must be unique'
-		s = Subscription(name='Marcelo Dias', cpf='12345678901', email='outro@email.com', phone='27-12345678')
+		s = Subscription(name='Marcelo Dias',
+						cpf='12345678901',
+						email='outro@email.com',
+						phone='27-12345678')
 		self.assertRaises(IntegrityError, s.save)
 
 	def test_email_unique(self):
 		'Email must be unique'
-		s = Subscription(name='Marcelo Dias', cpf='98765432101', email='marcelo@dias.com', phone='27-12345678')
+		s = Subscription(name='Marcelo Dias',
+						cpf='98765432101',
+						email='marcelo@dias.com',
+						phone='27-12345678')
 		self.assertRaises(IntegrityError, s.save)
