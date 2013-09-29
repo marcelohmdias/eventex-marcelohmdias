@@ -28,11 +28,24 @@ class SubscriptionFormTest(TestCase):
 		self.assertFalse(form.errors)
 
 
+	def test_must_inform_email_or_phone(self):
+		'Email and Phone are optional, but one must be informed.'
+		form = self.make_validated_form(email='', phone_0='', phone_1='')
+		self.assertItemsEqual(['__all__'], form.errors)
+
+
+	def test_name_must_be_capitalized(self):
+		'Name must be capitalizer.'
+		form = self.make_validated_form(name='MARCELO dias')
+		self.assertEqual('Marcelo Dias', form.cleaned_data['name'])
+
+
 	def make_validated_form(self, **kwargs):
 		data = dict(name='Marcelo Dias',
 					email='marcelo@dias.com',
 					cpf='12345678901',
-					phone='27-12345678')
+					phone_0='27',
+					phone_1='12345678')
 		data.update(kwargs)
 		form = SubscriptionForm(data)
 		form.is_valid()

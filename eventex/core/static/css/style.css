@@ -54,21 +54,23 @@ header nav>ul>li>a:hover{color:#fff; background:#38628B}
 
 #featured .content{padding: 50px 0}
 
-#featured h1{font-size: 65px; color:#2F4A6F; line-height: 170%; text-align: center; vertical-align: middle; font-family: 'Nova Square'} 
+#featured h1{font-size: 65px; color:#2F4A6F; line-height: 170%; text-align: center; vertical-align: middle; font-family: 'Nova Square'; padding: 20px 0px 50px 0px} 
 
 #main{position: relative; height: auto}
 
 #main p{line-height:350%}
 
-#form{position: relative; height: auto}
+#detail{position: relative; height: auto}
 
-#form h2{font-size: 25px; color:#000; font-weight: bold; font-family: 'Nova Square'}
+#detail h2{font-size: 45px; color:#2F4A6F; line-height: 170%; text-align: center; vertical-align: middle; font-family: 'Nova Square'; padding: 50px 0px 50px 0px}
+
+#detail p{line-height:400%; font-size: 20px; text-align: center; vertical-align: middle}
 
 /***********Comportamento do rodapé***********/
 
-#footer{bottom:-200px; position: absolute; padding-bottom: 40px; background: #2F4A6F}
+#footer{bottom:-200px; position: absolute; padding-bottom: 100px; background: #2F4A6F; height: 50px}
 
-footer{background: #2F4A6F; border-top: solid 1px #BDC3C7}
+footer{background: #2F4A6F; border-top: solid 1px #BDC3C7; height: 100px}
 
 footer p{color: #FFF}
 
@@ -82,6 +84,10 @@ footer span{float: right}
 
 #inscription{padding: 30px 0px 30px 60px}
 
+#form{position: relative; height: auto}
+
+#form h2{font-size: 25px; color:#000; font-weight: bold; font-family: 'Nova Square'}
+
 form{padding-top: 40px; padding-bottom: 40px}
 
 fieldset{border: solid 2px #000; border-radius: 15px}
@@ -92,9 +98,13 @@ form fieldset table tr{height: 40px}
 
 form fieldset table tr td{width: 150px}
 
-input{border: solid 2px #000; border-radius: 5px; width: 650px; height: 30px}
+#id_phone_0{padding: 0px 20px 0px 20px;border: solid 2px #000; border-radius: 5px; width: 60px; height: 30px; padding-right: 10px; font-size: 14px; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
 
-input:focus{border: solid 2px #38628B; background-color: #F5F5F5}
+#id_phone_1{padding: 0px 20px 0px 20px; border: solid 2px #000; border-radius: 5px; width: 580px; height: 30px; float: right; font-size: 14px; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
+
+input{padding: 0px 20px 0px 20px; border: solid 2px #000; border-radius: 5px; width: 650px; height: 30px; font-size: 14px; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
+
+input:focus{border: solid 2px #38628B; background-color: #BDC3C7}
 
 .button{border-radius: 3px; border: 0px; width: 150px; background-color: #2F4A6F; color: #FFF; padding: 5px; font-size: 14px; float: right; font-family: 'Aldrich', 'Armata', Monaco, Menlo, Consolas, Helvetica, Verdana, sans-serif}
 
